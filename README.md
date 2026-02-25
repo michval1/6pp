@@ -67,7 +67,7 @@ dotnet watch
   1. Open the `backend/` folder in VS Code.
   1. Open the Solution Explorer pane, right-click `EduCore.Api` -> Debug -> Start New Instance.
 
-_The API will be available at <http://localhost:5000/swagger>_
+_The API will be available at <http://localhost:5000>_
 
 ### Step 3: Start the Frontend UI
 
@@ -89,8 +89,8 @@ To test how the entire application runs together inside isolated containers (e.g
 docker-compose up --build
 ```
 
-- **Frontend UI:** <http://localhost:3000>
-- **Backend Swagger:** <http://localhost:5000/swagger>
+- **Frontend:** <http://localhost:3000>
+- **Backend:** <http://localhost:5000>
 - **Database:** `localhost:1433` (Login: `sa`, Password: from `.env`, set Trust Server Certificate: True)
 
 ---
