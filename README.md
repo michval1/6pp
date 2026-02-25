@@ -3,11 +3,9 @@
 ## Tech stack
 
 - **Backend:** C# .NET 9, ASP.NET Core API, Entity Framework Core, JWT Authentication
-- **Database:** MS SQL Server 2022 (containerized)
+- **Database:** MS SQL Server
 - **Frontend:** Vanilla HTML, CSS, JavaScript
 - **Infrastructure:** Docker & Docker Compose
-
----
 
 ## First-time setup
 
@@ -36,7 +34,6 @@ DB_PASSWORD=ExtremelyStrongPassword123!
   }
 }
 ```
----
 
 ## Development workflow
 
@@ -58,14 +55,14 @@ dotnet watch
 ```
 
 - **Visual Studio:**
-  1. Open `backend/EduCore.sln`.
-  1. In the top toolbar, change the run profile to `http`.
-  1. Press `F5` to start debugging.
+1. Open `backend/EduCore.sln`.
+1. In the top toolbar, change the run profile to `http`.
+1. Press `F5` to start debugging.
 
 - **Visual Studio Code:**
-  1. Install the **"C# Dev Kit"** extension.
-  1. Open the `backend/` folder in VS Code.
-  1. Open the Solution Explorer pane, right-click `EduCore.Api` -> Debug -> Start New Instance.
+1. Install the **"C# Dev Kit"** extension.
+1. Open the `backend/` folder in VS Code.
+1. Open the Solution Explorer pane, right-click `EduCore.Api` -> Debug -> Start New Instance.
 
 _The API will be available at <http://localhost:5000>_
 
@@ -80,8 +77,6 @@ python -m http.server 3000
 
 _The UI will be available at <http://localhost:3000>_
 
----
-
 ## Full Docker execution (production / CI testing)
 
 To test how the entire application runs together inside isolated containers (e.g., before merging a Pull Request):
@@ -92,8 +87,6 @@ docker-compose up --build
 - **Frontend:** <http://localhost:3000>
 - **Backend:** <http://localhost:5000>
 - **Database:** `localhost:1433` (Login: `sa`, Password: from `.env`, set Trust Server Certificate: True)
-
----
 
 ## Git workflow
 
